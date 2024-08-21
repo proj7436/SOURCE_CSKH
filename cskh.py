@@ -17,7 +17,7 @@ bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
 
 IMAGES_FORDEL = 'images'
 VIDEOS_FORDEL = 'videos'
-ID_GROUP = -4207313487
+ID_GROUP = -1002167871661
 try:
     if not os.path.exists(IMAGES_FORDEL):
         os.makedirs(IMAGES_FORDEL)
@@ -476,8 +476,8 @@ def auto_handle():
         minute = datetime.datetime.now().minute
         second = datetime.datetime.now().second
         goodMorning(hour, minute, second)
-        goodnoon(hour, minute, second)
-        goodnoon(hour, minute, second)
+        # goodnoon(hour, minute, second)
+        # goodnight(hour, minute, second)
         time.sleep(1)
 thread = threading.Thread(target=auto_handle)
 thread.setDaemon(True)
